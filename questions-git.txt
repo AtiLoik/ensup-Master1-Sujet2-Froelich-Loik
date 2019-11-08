@@ -1,0 +1,101 @@
+﻿QUESTIONS:
+
+1/- C'est quoi Git ?
+
+2/- C'est quoi un repository git ?
+
+3/- Quelle commande faut t il écrire pour valider un ajout dans un repertoire git ?
+
+4/- que fait la commande git push ?
+
+5/- quel est l'avantage de git par rapport à svn?
+
+6/- c'est quoi la commande git stash ?
+
+7/- c'est quoi la commande git branch ?
+
+8/- c'est quoi la commande git clone ?
+
+9/-c'est quoi la commande git config ?
+
+10/- c'est quoi la commande git init ?
+
+11/- c'est quoi un conflit git ?
+
+12/- comment resoudre un conflit git ?
+
+13/- c'est quoi la commande git remote ?
+
+14/- quelle est la différence entre git remote et git clone ?
+
+15/- c'est quoi la commande git status ?
+
+16/- c'est quoi la commande git checkout ?
+
+17/- c'est quoi la commande git log ?
+
+18/- donner la suite de commandes à écrire pour envoyer un fichier sur un repository distant
+
+19/- c'est quoi github ?
+
+20/- citer 3 avantages d'utiliser git dans un projet
+
+21/- c'est quoi le fichier .gitignore
+
+22/- quelles sont les étapes permettant de lier un projet git local à github?
+
+23/- quel est le role des branches sur git ?
+
+24/- c'est quoi un conflit git?
+
+25/- comment resoudre un conflit sur git ?
+
+LE BONCOIN:
+
+UML
+---
+ Personne 1-----------* Annonce
+ personneId             idAnnonce 
+ nom                    intitule
+ prenom                 detail
+ login                  prix
+ motDePasse
+ dateNaissance   
+
+ - créer un projet java : Ensup-Master1-tp2-Nom-Prenom
+ - configurer le git/github avec un projet java et rajouter serviceshuios en collaborateur
+ 
+ Metier:
+--------
+ Personne
+ Annonce
+ 
+ Iservice:
+----------
+  //Crud Personne
+ public int creerPersonne(List<Personne> list, Personne personne)
+ public Personne getPersonne(List<Personne> list,int idPersonne)
+ public void deletePersonne(List<Personne> list,int idPersonne)
+ public void updatePersonne(List<Personne> list,Personne p, String nom, String prenom, Date dateNaissance)
+ public List<Personne> findAllPersonnes()
+ public int getPersonneId(List<Personne> list,Personne p)
+ public void affichePersonnes();
+ public void afficheAnnoncesPersonne(Personne p)
+ //Crud Annonce
+ public int creerAnnonce(Personne personne, Annonce a)
+ public Annonce getAnnonce(Personne personne,int idAnnonce)
+ public void deleteAnnonce(Personne personne,int idAnnonce)
+ public void updateAnnonce(Personne personne,Annonce a)
+ public List<Annonce> findAllAnnonce(Personne personne)
+
+ServiceImpl
+-----------
+implementation de l'interface
+utiliser un tableau de Personne pour office de stockage des données
+public static List<Personne> base = new ArrayList<Personne>();
+
+Lanceur
+-------
+Tester chaque méthode
+
+A la fin (17h00) au plus tard pusher son code sur github  
