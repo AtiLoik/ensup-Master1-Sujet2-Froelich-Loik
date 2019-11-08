@@ -8,9 +8,9 @@ import Metier.Personne;
 
 public class Crud_Annonce {
 	
-		public int creerAnnonce(Personne personne, Annonce a)
+		public void creerAnnonce(Personne personne, Annonce a)
 		{
-			return 1;
+			
 		}
 		
 		public Annonce getAnnonce(Personne personne,int idAnnonce)
@@ -25,9 +25,7 @@ public class Crud_Annonce {
 		public void updateAnnonce(Personne personne,Annonce a)
 		{}
 		
-		public List<Annonce> findAllAnnonce(Personne personne)
+		public void findAllAnnonce(Personne personne)
 		{
-			List<Annonce> LA = new ArrayList();
-			return LA;
 		}
 }

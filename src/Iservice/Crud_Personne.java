@@ -8,22 +8,48 @@ import Metier.Personne;
 
 public class Crud_Personne {
 	
-		public int creerPersonne(List<Personne> list, Personne personne)
+		public void creerPersonne(List<Personne> list, Personne personne)
 		{
-			return 1;
+			list.add(personne);
 		}
 	
 		public Personne getPersonne(List<Personne> list,int idPersonne)
 		{
 			Personne p = new Personne();
+			for (int i = 0; i < list.size(); i++)
+			{
+				if(i == idPersonne)
+				{
+					p = list.get(i);
+				}
+			}
 			return p;
 		}
 		
 		public void deletePersonne(List<Personne> list,int idPersonne)
-		{}
+		{
+			Personne p = new Personne();
+			for (int i = 0; i < list.size(); i++)
+			{
+				if(i == idPersonne)
+				{
+					list.remove(i);
+				}
+			}
+		}
 		
 		public void updatePersonne(List<Personne> list,Personne p, String nom, String prenom, Date dateNaissance)
-		{}
+		{
+			for (int i = 0; i < list.size(); i++)
+			{
+				if(i == p.getId())
+				{
+					p.setNom(nom);
+					p.setPrenom(prenom);
+					p.setDateNaissance(dateNaissance);
+				}
+			}
+		}
 		
 		public List<Personne> findAllPersonnes()
 		{
@@ -33,7 +59,7 @@ public class Crud_Personne {
 		
 		public int getPersonneId(List<Personne> list,Personne p)
 		{
-			return 1;
+			return p.getId();
 		}
 		
 		public void affichePersonnes()
