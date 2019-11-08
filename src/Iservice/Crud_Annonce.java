@@ -1,5 +1,6 @@
 package Iservice;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import Metier.Annonce;
@@ -25,5 +26,8 @@ public class Crud_Annonce {
 		{}
 		
 		public List<Annonce> findAllAnnonce(Personne personne)
-		{}
+		{
+			List<Annonce> LA = new ArrayList();
+			return LA;
+		}
 }

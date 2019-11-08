@@ -1,5 +1,6 @@
 package Iservice;
 
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -26,7 +27,7 @@ public class Crud_Personne {
 		
 		public List<Personne> findAllPersonnes()
 		{
-			List<Personne> LP = new List<Personne>;
+			List<Personne> LP = new ArrayList();
 			return LP;
 		}
 		
@@ -35,7 +36,7 @@ public class Crud_Personne {
 			return 1;
 		}
 		
-		public void affichePersonnes();
+		public void affichePersonnes()
 		{
 			System.out.println("Voici la personne demandée");
 		}
