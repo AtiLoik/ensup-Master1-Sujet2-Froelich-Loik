@@ -7,7 +7,7 @@ Un service de versioning utilisant un serveur distant
 Un dossier accessible à distance par plusieurs developpeurs pour travailler sur le meme projet
 
 3/- Quelle commande faut t il écrire pour valider un ajout dans un repertoire git ?
-git commit -m "Message"
+git push origin <nom de la branche>
 
 4/- Que fait la commande git push ?
 Envoie les commits locaux sur le serveur distant
@@ -18,7 +18,7 @@ Envoie les commits locaux sur le serveur distant
 
 
 7/- c'est quoi la commande git branch ?
-Permet de lister les branches du projet (ou d'en créer, en supprimer, etc ...)
+Permet de lister les branches du projet (ou d'en créer, d'en supprimer, etc ...)
 
 8/- c'est quoi la commande git clone ?
 Clone un repesitory distant sur la machine locale
@@ -36,8 +36,11 @@ C'est quand on merge deux branches et que deux fichiers supposement identiques s
 En modifiant le fichiers à l'origine du conflit
 
 13/- c'est quoi la commande git remote ?
+Envoie les fichiers locaux sur le serveur distant
 
 14/- quelle est la différence entre git remote et git clone ?
+Git remote: Envoie les fichiers locaux sur le serveur
+Git clone: Envoie les fichiers distants en local
 
 15/- c'est quoi la commande git status ?
 Liste les fichiers locaux différents de ceux du serveur distant
@@ -66,6 +69,12 @@ Un site web permettant de gérer des repesitories Git
 Liste des fichiers à ignorer lors d'un commit ou d'un push
 
 22/- quelles sont les étapes permettant de lier un projet git local à github?
+git init (dans le fichier local)
+git remote add origin <adresse github du repesitory>
+git pull origin master
+git add *
+git commit -m "Message"
+git push origin master
 
 23/- quel est le role des branches sur git ?
 Permettre aux développeurs de travailler sur un meme logiciel, mais sur des parties differentes
