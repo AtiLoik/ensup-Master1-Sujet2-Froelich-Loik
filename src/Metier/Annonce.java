@@ -5,7 +5,14 @@ public class Annonce {
 	private String intitule;
 	private String detail;
 	private String prix;
+	private Personne p;
 	
+	public Personne getP() {
+		return p;
+	}
+	public void setP(Personne p) {
+		this.p = p;
+	}
 	public int getId() {
 		return id;
 	}

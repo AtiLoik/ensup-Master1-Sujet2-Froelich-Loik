@@ -9,6 +9,7 @@ public class Personne {
 	private String login;
 	private String MotDePasse;
 	private Date DateNaissance;
+	
 	public int getId() {
 		return id;
 	}

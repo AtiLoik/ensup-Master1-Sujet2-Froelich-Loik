@@ -10,7 +10,7 @@ public class Crud_Annonce {
 	
 		public void creerAnnonce(Personne personne, Annonce a)
 		{
-			
+			a.setP(personne);
 		}
 		
 		public Annonce getAnnonce(Personne personne,int idAnnonce)
